@@ -7,8 +7,8 @@ import { ProSidebarProvider } from 'react-pro-sidebar';
 import{Route, Routes}from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team/index.jsx";
-import Contacts from "./scenes/contacts/test.js";
-// import Contacts from "./scenes/contacts/index.jsx";
+import Contacts from "./scenes/contacts/index.jsx";
+import Invoices from "./scenes/invoices/index";
 
 
 export const ColorModeContext=createContext();
@@ -28,6 +28,7 @@ function App() {
               <Route path="/" element={<Dashboard />}/>
               <Route path="Team" element={<Team />}/>
               <Route path="Contacts" element={<Contacts />}/>
+              <Route path="Invoices" element={<Invoices />}/>
             </Routes>
           </div>
     </div>
