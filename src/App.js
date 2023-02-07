@@ -8,6 +8,7 @@ import{Route, Routes}from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team/index.jsx";
 import Contacts from "./scenes/contacts/index.jsx";
+import Form from "./scenes/form/index";
 import Invoices from "./scenes/invoices/index";
 
 
@@ -23,12 +24,12 @@ function App() {
       <SideBar />
           <div className="content">
             <Topbar />
-            
             <Routes>
               <Route path="/" element={<Dashboard />}/>
               <Route path="Team" element={<Team />}/>
               <Route path="Contacts" element={<Contacts />}/>
               <Route path="Invoices" element={<Invoices />}/>
+              <Route path="Form" element={<Form/>}/>
             </Routes>
           </div>
     </div>
