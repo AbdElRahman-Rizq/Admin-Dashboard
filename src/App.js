@@ -10,6 +10,8 @@ import Team from "./scenes/team/index.jsx";
 import Contacts from "./scenes/contacts/index.jsx";
 import Form from "./scenes/form/index";
 import Invoices from "./scenes/invoices/index";
+// import FAQ from "./scenes/faq/test";
+import FAQ from "./scenes/faq/index";
 
 
 export const ColorModeContext=createContext();
@@ -30,6 +32,7 @@ function App() {
               <Route path="Contacts" element={<Contacts />}/>
               <Route path="Invoices" element={<Invoices />}/>
               <Route path="Form" element={<Form/>}/>
+              <Route path="FAQ" element={<FAQ/>}/>
             </Routes>
           </div>
     </div>
