@@ -10,7 +10,7 @@ import Team from "./scenes/team/index.jsx";
 import Contacts from "./scenes/contacts/index.jsx";
 import Form from "./scenes/form/index";
 import Invoices from "./scenes/invoices/index";
-// import FAQ from "./scenes/faq/test";
+import Bar from "./scenes/bar/index";
 import FAQ from "./scenes/faq/index";
 
 
@@ -33,6 +33,7 @@ function App() {
               <Route path="Invoices" element={<Invoices />}/>
               <Route path="Form" element={<Form/>}/>
               <Route path="FAQ" element={<FAQ/>}/>
+              <Route path="BarChart" element={<Bar/>}/>
             </Routes>
           </div>
     </div>
