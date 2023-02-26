@@ -9,13 +9,11 @@ import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
+
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-import PieChartOutlinedIcon from "@mui/icons-material/PieChartOutlined";
-import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+
 
 
 
@@ -91,7 +89,7 @@ return(
    }
    {/* Screens {Menu Items} */}
    <Item 
-   rlink={<Link to="/Dashboard" />}
+   rlink={<Link to="/" />}
    title={"Dashboard"}
    icon={<HomeOutlinedIcon/>}
    selected={selected}
@@ -130,14 +128,7 @@ return(
    setSelected={setSelected}
    collapse={collapse}
    />
-   <Item 
-   rlink={<Link to="/Calendar" />}
-   title={"Calendar"}
-   icon={<CalendarTodayOutlinedIcon/>}
-   selected={selected}
-   setSelected={setSelected}
-   collapse={collapse}
-   />
+  
    <Item 
    rlink={<Link to="/FAQ" />}
    title={"FAQ Page"}
@@ -154,30 +145,7 @@ return(
    setSelected={setSelected}
    collapse={collapse}
    />
-   <Item 
-   rlink={<Link to="/PieChart" />}
-   title={"Pie Chart"}
-   icon={<PieChartOutlinedIcon/>}
-   selected={selected}
-   setSelected={setSelected}
-   collapse={collapse}
-   />
-    <Item 
-   rlink={<Link to="/Line" />}
-   title={"Line Chart"}
-   icon={<TimelineOutlinedIcon/>}
-   selected={selected}
-   setSelected={setSelected}
-   collapse={collapse}
-   />
-    <Item 
-   rlink={<Link to="/Geography" />}
-   title={"Geography Chart"}
-   icon={<MapOutlinedIcon/>}
-   selected={selected}
-   setSelected={setSelected}
-   collapse={collapse}
-   />
+  
 </Menu>
         </Sidebar>
        </Box>
