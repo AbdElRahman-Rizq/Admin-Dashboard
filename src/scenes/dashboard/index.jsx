@@ -123,7 +123,7 @@ mr="1%"
         </Box>
     </Box>
     {/* Row 3 */}
-  
+  {/* Recent Transaction */}
 <Box
           width="25%"
           maxHeight={"340px"}
@@ -187,7 +187,7 @@ mr="1%"
             </Box>
           ))}
             
-                </Box>
+                </Box>                
             
         </Box>
     
