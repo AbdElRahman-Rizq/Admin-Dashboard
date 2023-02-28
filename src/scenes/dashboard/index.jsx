@@ -209,7 +209,9 @@ const Dashboard = () => {
           >
             Sales Quantity
           </h3>
-          <Box height="250px" mt="-20px">
+          <Box height="250px" mt="-20px"
+            style={{color:"black"}} //Cause in dark mood color doesn't appear
+            >
             <BarChart isDashboard={true} />
           </Box>
         </Box>       
