@@ -10,6 +10,7 @@ import TrafficIcon from "@mui/icons-material/Traffic";
 import BarChart from "../../components/Bar-chart";
 import ProgressCircle from "../../components/ProgressCircle";
 import { mockTransactions } from "../../data/mockData";
+import "./style.css";
 
 const Dashboard = () => {
   const theme = useTheme(),
@@ -18,10 +19,13 @@ const Dashboard = () => {
   return (
     <Box m="20px">
       {/* Row 1  Header*/}
-      <Box display={"flex"} justifyContent="space-between">
+      <Box 
+      className="Row1"
+      display={"flex"} justifyContent="space-between">
         <Header title={"DASHBOARD"} subtitle={"Welcome to your dashboard"} />
-        <Box>
+        <Box >
           <Button
+          id="Download_button"
             sx={{
               backgroundColor: colors.blueAccent[700],
               color: colors.grey[100],
@@ -35,13 +39,16 @@ const Dashboard = () => {
         </Box>
       </Box>
       {/* Row 2 */}
-      <Box display={"flex"}>
+      <Box display={"flex"} flexWrap={"wrap"} className={"Row2"}>
         <Box
+
           p="2%"
           sx={{
             backgroundColor: colors.primary[400],
             width: "25%",
-          }}>
+          }}
+          className="Box-row2"
+          >
           <StatBox
             title="12,361"
             subtitle="Emails Sent"
@@ -60,7 +67,9 @@ const Dashboard = () => {
             padding: "2%",
             backgroundColor: colors.primary[400],
             width: "25%",
-          }}>
+          }}
+          className="Box-row2"
+          >
           <StatBox
             title="431,225"
             subtitle="Sales Obtained"
@@ -79,7 +88,9 @@ const Dashboard = () => {
             padding: "2%",
             backgroundColor: colors.primary[400],
             width: "25%",
-          }}>
+          }}
+          className="Box-row2"
+          >
           <StatBox
             title="32,441"
             subtitle="New Clients"
@@ -97,7 +108,9 @@ const Dashboard = () => {
             padding: "2%",
             backgroundColor: colors.primary[400],
             width: "25%",
-          }}>
+          }}
+          className="Box-row2"
+          >
           <StatBox
             title="1,325,134"
             subtitle="Traffic Received"
@@ -112,9 +125,12 @@ const Dashboard = () => {
         </Box>
       </Box>
       {/* Row 3 */}
-      <Box display={"flex"} justifyContent="space-between" mt="1%">
+      <Box display={"flex"} justifyContent="space-between"
+      className={"Row3"}
+      mt="1%">
         {/* Recent Transaction */}
         <Box
+        className="Recent-Transaction"
           width="30%"
           maxHeight={"310px"}
           backgroundColor={colors.primary[400]}
@@ -168,7 +184,12 @@ const Dashboard = () => {
           ))}
         </Box>
         {/* Campaign */}
-        <Box width={"33%"} backgroundColor={colors.primary[400]} p="30px">
+        <Box
+         width={"33%"} 
+         backgroundColor={colors.primary[400]} 
+         p="30px"
+         className="Campaign"
+         >
           <h3
             style={{
               margin: "0",
@@ -198,7 +219,8 @@ const Dashboard = () => {
         </Box>
         {/* Bar chart */}
         <Box
-        width={"33%"}
+       width={"33%"}
+       className="Bar_chart"
           backgroundColor={colors.primary[400]}
         >
           <h3

@@ -1,0 +1,30 @@
+@media (max-width: 765px) {
+  .Row1,
+  .Row2,
+  .Row3 {
+    margin: auto;
+    max-width: 60%;
+  }
+  #Download_button{
+    font-size: 11px;
+    padding: 8px 18px;
+  }
+  .Row2 .Box-row2 {    
+    padding: 2%;
+  }
+  .Row2 .Box-row2,
+  .Row3 .Recent-Transaction,
+  .Row3 .Bar_chart {
+    margin: 3% 0;
+  }
+  .Row3 {
+    flex-wrap: wrap;
+  }
+  .Row2 .Box-row2,
+  .Row3 .Recent-Transaction,
+  .Row3 .Campaign,
+  .Bar_chart {
+    width: 80% !important;
+    margin-left: 10% !important;
+  }
+}
