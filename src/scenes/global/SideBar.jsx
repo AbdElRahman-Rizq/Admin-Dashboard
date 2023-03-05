@@ -9,7 +9,7 @@ import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-
+import "./style.css";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
@@ -43,12 +43,23 @@ return(
         </StyledMenuItem>)
         }
     return(        
-       <Box>
-        <Sidebar style={{height:'100%',minWidth:collapse?'5vw':'',width:collapse?'6vw':'',margin:0}} rootStyles={{
+       <Box 
+       >
+        <Sidebar 
+           className='sideBar'       
+        style={{
+            height:'100%',
+            minWidth:collapse?'5vw':'',width:collapse?'6vw':'',margin:0
+    ,display:"flex"
+    }} 
+    
+    rootStyles={{
             
     [`.${sidebarClasses.container}`]: {
       backgroundColor: 'transparent !important' ,
-    } }}>
+    } }}
+    
+    >
 <Menu 
  menuItemStyles={{
       button: ({active}) => {

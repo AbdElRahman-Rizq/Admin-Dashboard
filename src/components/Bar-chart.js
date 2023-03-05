@@ -41,7 +41,7 @@ const BarChart = ({ isDashboard = false }) => {
       }}
       keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
       indexBy="country"
-      margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+      margin={{ top: 50, right: isDashboard ? 50 : 130, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: false }}
@@ -101,8 +101,8 @@ const BarChart = ({ isDashboard = false }) => {
           anchor: "bottom-right",
           direction: "column",
           justify: false,
-          translateX: 120,
-          translateY: 0,
+          translateX: isDashboard ? 0 : 120,
+          translateY: 200,
           itemsSpacing: 2,
           itemWidth: 100,
           itemHeight: 20,

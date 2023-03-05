@@ -1,0 +1,14 @@
+@media (max-width: 765px) {
+.sideBar{
+    position: fixed;    
+    /* background-color:rgba(8, 59, 57, 0.884); */
+    top: 0;
+    right: 0;   
+    left: 0;
+    height: 12vh !important;
+    z-index: 2;
+    width:100% !important;
+}
+
+
+}

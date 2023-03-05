@@ -17,7 +17,9 @@ const Dashboard = () => {
     colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="20px"
+    className="Dashboard-body"
+    >
       {/* Row 1  Header*/}
       <Box 
       className="Row1"
@@ -39,7 +41,7 @@ const Dashboard = () => {
         </Box>
       </Box>
       {/* Row 2 */}
-      <Box display={"flex"} flexWrap={"wrap"} className={"Row2"}>
+      <Box display={"flex"}  className={"Row2"}>
         <Box
 
           p="2%"
