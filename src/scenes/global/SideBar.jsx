@@ -1,6 +1,6 @@
 import { Sidebar, Menu, MenuItem,sidebarClasses} from 'react-pro-sidebar';
 import  Styled from '@emotion/styled';
-import { tokens } from "../../theme";
+import { themeSettings, tokens } from "../../theme";
 import { Link } from 'react-router-dom';
 import { Box, useTheme } from '@mui/material';
 import { useState } from 'react';
@@ -17,10 +17,11 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 
 
 
-const SideBar=()=>{
+const SideBar=({IsMobile=false})=>{
     const theme=useTheme();
     const colors=tokens(theme.palette.mode);
     const [collapse,setCollapse]=useState(false);
+    
     const [selected,setSelected]=useState('Dashboard');
    const StyledMenuItem =Styled(MenuItem)`
    a{
@@ -48,9 +49,14 @@ return(
         <Sidebar 
            className='sideBar'       
         style={{
-            height:'100%',
-            minWidth:collapse?'5vw':'',width:collapse?'6vw':'',margin:0
-    ,display:"flex"
+            height:'100vh',
+            minWidth:collapse?'5vw':'',maxWidth:collapse?'6vw':IsMobile?"7vw":'',
+            margin:0
+    ,display:"flex",
+    position: IsMobile?"fixed":"",
+    backgroundColor:IsMobile?themeSettings(theme.palette.mode).palette.background.default:"initial", 
+    zIndex:"2",
+    left:IsMobile?"0":"intial", top:IsMobile?"0":"intial"
     }} 
     
     rootStyles={{
@@ -62,9 +68,10 @@ return(
     >
 <Menu 
  menuItemStyles={{
-      button: ({active}) => {
+     
+    button: ({active}) => {
           return {
-            backgroundColor: active ? colors.grey[500] : undefined,
+            backgroundColor: IsMobile?'initial' :active ? colors.grey[500]: undefined,
           };
       },
     }}

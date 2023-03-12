@@ -15,22 +15,21 @@ const Invoices=()=>{
     {field:"name",
     headerName: "Name",
     flex: .7,
-    cellClassName: "name-column",
+    cellClassName: "name-column",minWidth:110
 },
     {
       field: "email",
-      headerName: "Email",
-      flex: .7,
+      headerName: "Email",minWidth:120
     },
     {
         field: "phone",
-        headerName: "Phone Mumber",
-        flex: .5,
+        headerName: "Phone Number",
+        flex: .5,minWidth:100
       },
     {
       field: "cost",
       headerName: "Cost",
-      flex: .5,
+      flex: .5,minWidth:85,
     cellClassName: "cost-column",
     renderCell:(number)=>(
         <h3>

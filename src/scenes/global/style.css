@@ -1,14 +1,12 @@
 @media (max-width: 765px) {
-.sideBar{
-    position: fixed;    
-    /* background-color:rgba(8, 59, 57, 0.884); */
-    top: 0;
-    right: 0;   
-    left: 0;
-    height: 12vh !important;
-    z-index: 2;
-    width:100% !important;
+
+/* Top Bar */
+.searchBar {
+    width: 100% !important;
+    margin: 0 20% 0 0;
 }
-
-
+.MenueIcon{
+    display:block !important;
+    transition: all 5s !important;
+}
 }

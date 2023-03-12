@@ -102,7 +102,7 @@ const BarChart = ({ isDashboard = false }) => {
           direction: "column",
           justify: false,
           translateX: isDashboard ? 0 : 120,
-          translateY: 200,
+          translateY: isDashboard ?200:0,
           itemsSpacing: 2,
           itemWidth: 100,
           itemHeight: 20,

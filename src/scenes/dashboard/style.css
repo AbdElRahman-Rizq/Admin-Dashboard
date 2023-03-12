@@ -7,7 +7,7 @@
   .Row2,
   .Row3 {
     margin: auto;
-    max-width: 60%;
+    max-width: 70%;
   }
   .Row2{
     flex-wrap: wrap !important;

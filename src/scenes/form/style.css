@@ -1,0 +1,11 @@
+#submit-button{
+   border: initial;
+   
+   margin-top: 3%;
+   padding:.5%;
+   border-radius: 3px;
+   cursor: pointer;
+}
+#submit-button:hover{
+color: aliceblue;
+}

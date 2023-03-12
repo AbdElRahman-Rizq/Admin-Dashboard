@@ -8,6 +8,12 @@ font-family: 'Source Sans Pro',sans-serif;
   display: flex;
   position: relative;
 }
+@media (max-width: 765px) {
+
+.side-Bar{
+  display:none !important;
+} 
+}
 ::-webkit-scrollbar{
   width: 1vw;
 }

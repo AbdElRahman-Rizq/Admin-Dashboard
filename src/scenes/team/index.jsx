@@ -11,16 +11,16 @@ const Sidebar=()=>{
     const colors = tokens(theme.palette.mode);
     const columns = [
         { field: "id", headerName: "ID" },
-        { field: "name", headerName: "Name",  flex: 1 },
-        {field: "phone",headerName: "Phone Number",flex: 1},
-        { field: "email", headerName: "Email",  flex: 1 },
+        { field: "name", headerName: "Name",width:250 },
+        {field: "phone",headerName: "Phone Number",minWidth:250},
+        { field: "email", headerName: "Email", width:250},
         {
             field: "accessLevel",
             headerName: "Access Level",
-            flex: 1,
+            
             renderCell:({row:{access}})=>{
                 return(
-                    <Box width="50%"  display="flex" p="5px" 
+                    <Box width="100%"  display="flex" p="5px" 
                     justifyContent="center"
                         backgroundColor={colors.greenAccent[600]}
                     >
@@ -42,11 +42,13 @@ const Sidebar=()=>{
             "& .MuiDataGrid-columnHeaders": {
                 backgroundColor: colors.blueAccent[700],
             borderBottom: "none",
+                
               },
             "& .MuiCheckbox-root": {
                 color: `${colors.greenAccent[200]} !important`,
-              },
-              "& .MuiDataGrid-root":{
+            },
+            "& .MuiDataGrid-root":{
+                  
                   fontSize:"0.75rem !important",
               }
         }}>

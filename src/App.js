@@ -13,7 +13,6 @@ import Invoices from "./scenes/invoices/index";
 import Bar from "./scenes/bar/index";
 import FAQ from "./scenes/faq/index";
 
-
 export const ColorModeContext=createContext();
 function App() {
   const[theme,colorMode]=useMode();
@@ -23,7 +22,10 @@ function App() {
       <ProSidebarProvider>
 <CssBaseline />
     <div className="app">
+     <div className={"side-Bar"}>
+
       <SideBar />
+     </div>
           <div className="content">
             <Topbar />
             <Routes>
