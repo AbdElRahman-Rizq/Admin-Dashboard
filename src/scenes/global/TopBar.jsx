@@ -11,7 +11,7 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { ColorModeContext } from "../../App";
 import SideBar from "./SideBar";
 import"./style.css";
-import throttle from"lodash.throttle";
+
 const Topbar=()=>{
         const theme=useTheme();
         const colors=tokens(theme.palette.mode)
@@ -21,12 +21,12 @@ const Topbar=()=>{
         const toggleFun=
             
         
-        useCallback(throttle(()=>{
+        useCallback(()=>{
 
             setToggle(!toggle)
         }            
                 
-        ,2000),[toggle]);
+        ,[toggle]);
         return(            
             <Box 
             display="flex" justifyContent="space-between" p={2}>
