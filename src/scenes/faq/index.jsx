@@ -18,7 +18,9 @@ const FAQ=()=>{
                 An Important Question
                 </Summary>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails style={
+          {maxHeight:"11vh",
+          padding:"0 15px"}}>
           <h5 >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -31,7 +33,9 @@ const FAQ=()=>{
             Another Important Question
                 </Summary>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails style={
+          {maxHeight:"11vh",
+          padding:"0 15px"}}>
           <h5 >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
@@ -44,20 +48,25 @@ const FAQ=()=>{
             Your Favorite Question
                 </Summary>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails style={
+          {maxHeight:"11vh",
+          padding:"0 15px"}}>
           <h5 >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </h5>
         </AccordionDetails>
         </Accordion>
-        <Accordion m="0px">
+        <Accordion mb="200px">
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Summary style={{ color: colors.greenAccent[500] }}> 
             The Final Question
                 </Summary>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails style={
+          {maxHeight:"11vh",
+          padding:"0 15px"}}
+          >
           <h5 >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.

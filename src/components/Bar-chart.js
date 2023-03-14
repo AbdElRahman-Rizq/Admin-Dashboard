@@ -3,7 +3,7 @@ import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "../theme";
 import { mockBarData as data } from "../data/mockData";
 
-const BarChart = ({ isDashboard = false }) => {
+const BarChart = ({ isDashboard = false ,isMobile=false}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -39,9 +39,9 @@ const BarChart = ({ isDashboard = false }) => {
           },
         },
       }}
-      keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
+      keys={["hot dog", "burger",  "kebab", "donut"]}
       indexBy="country"
-      margin={{ top: 50, right: isDashboard ? 50 : 130, bottom: 50, left: 60 }}
+      margin={{ top: 50, right: isDashboard ? 20 :isMobile ? 40 : 140, bottom: isMobile?100:50, left: 47 }}
       padding={0.3}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: false }}
@@ -99,16 +99,16 @@ const BarChart = ({ isDashboard = false }) => {
         {
           dataFrom: "keys",
           anchor: "bottom-right",
-          direction: "column",
+          direction: isMobile?"row":"column",
           justify: false,
-          translateX: isDashboard ? 0 : 120,
-          translateY: isDashboard ?200:0,
-          itemsSpacing: 2,
-          itemWidth: 100,
+          translateX: isDashboard ? 0 :isMobile?15:120,
+          translateY: isDashboard ?200:0||isMobile?75:0,
+          itemsSpacing:2,
+          itemWidth:isMobile?66:105,
           itemHeight: 20,
-          itemDirection: "left-to-right",
+          itemDirection: isMobile?"top-to-bottom":"left-to-right",
           itemOpacity: 0.85,
-          symbolSize: 20,
+          symbolSize: 21,
           effects: [
             {
               on: "hover",

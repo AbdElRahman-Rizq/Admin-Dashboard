@@ -36,7 +36,7 @@ const Topbar=()=>{
                 p:"1% 2% 0 0",
                 display:"none",
                 "& svg":{
-                    fontSize:"1.5rem",                    
+                    fontSize:"1.9rem",                    
                 }
                 
             }}

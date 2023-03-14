@@ -9,11 +9,11 @@ const Contacts=()=>{
     const colors=tokens(theme.palette.mode);
     const columns=[
         {field:"id",
-        headerName: "ID"
+        headerName: "ID", minWidth:50
     },
     {field:"name",
     headerName: "Name",
-    flex: .8,
+    minWidth:180,
     cellClassName: "name-column",
 },{
     field: "age",
@@ -21,27 +21,33 @@ const Contacts=()=>{
     type: "number",
     headerAlign: "left",
     align: "left",
+    minWidth:90
 },
     {
       field: "address",
       headerName: "Address",
-      flex: 1,
+      minWidth:250,
     },
     {
       field: "city",
       headerName: "City",
-      flex: .5,
+      minWidth:130,
     },
     {
       field: "zipCode",
       headerName: "Zip Code",
-      flex: .5,
+      minWidth:100,
+    },
+    {
+      field:"registrarId",
+      headerName: "Register_Id",
+      minWidth:80,
     }
     ]
     return(  
         <Box m="20px">
        <Header subtitle={"List of Contacts for Future Reference"} title={"CONTACTS"}/>
-       <Box mt="30px"
+       <Box m="30px 5px 0 0"
        height="75vh"
        b="0"
        sx={{

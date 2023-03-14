@@ -6,8 +6,8 @@
   .Row1,
   .Row2,
   .Row3 {
-    margin: auto;
-    max-width: 70%;
+    margin: 1% 0 1% 5%;
+    max-width: 90%;
   }
   .Row2{
     flex-wrap: wrap !important;
@@ -31,8 +31,8 @@
   .Row3 .Recent-Transaction,
   .Row3 .Campaign,
   .Bar_chart {
-    width: 80% !important;
-    margin-left: 10% !important;
-    padding: 22px !important;
+    width: 94% !important;
+    margin-left: 2% !important;
+    padding: 20px !important;
   }
 }

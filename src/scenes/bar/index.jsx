@@ -5,12 +5,17 @@ import "./style.css";
 
 const Bar = () => {
   return (
-    <Box m="20px" style={{color:"black"}}>
+    <Box ml="15px" style={{color:"black"}} >
       <Header title="Bar Chart" subtitle="Simple Bar Chart" />
       <Box height="75vh"
-      className="BarChart"
-      >
+      className="BarChart All-screens"
+      >        
         <BarChart />
+      </Box>
+      <Box height="75vh"
+      className="BarChart for-mobile">
+      <BarChart isMobile="true"/>
+
       </Box>
     </Box>
   );

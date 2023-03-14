@@ -4,32 +4,37 @@ import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
 import {  mockDataInvoices } from "../../data/mockData";
+import"./style.css";
 
 const Invoices=()=>{
     const theme=useTheme();
     const colors=tokens(theme.palette.mode);
     const columns=[
         {field:"id",
-        headerName: "ID"
+        headerName: "ID",minWidth:90
     },
     {field:"name",
     headerName: "Name",
-    flex: .7,
-    cellClassName: "name-column",minWidth:110
+    
+    cellClassName: "name-column",minWidth:180
 },
     {
       field: "email",
-      headerName: "Email",minWidth:120
+      headerName: "Email",minWidth:230
     },
     {
-        field: "phone",
-        headerName: "Phone Number",
-        flex: .5,minWidth:100
-      },
+      field: "phone",
+      headerName: "Phone Number",
+      minWidth:180
+    },{
+      field: "date",
+      headerName: "Date",
+      minWidth:180
+    },
     {
       field: "cost",
       headerName: "Cost",
-      flex: .5,minWidth:85,
+      minWidth:85,
     cellClassName: "cost-column",
     renderCell:(number)=>(
         <h3>
@@ -39,11 +44,12 @@ const Invoices=()=>{
     },
     ]
     return(  
-        <Box m="20px">
+        <Box m="30px ">
       <Header title="INVOICES" subtitle="List of Invoice Balances" />
-       <Box mt="30px"
+       <Box m="30px"
+       className="tableForMobile"
        height="75vh"
-       b="0"
+       p="0"
        sx={{
         "& .MuiDataGrid-root": {
             border: "none",

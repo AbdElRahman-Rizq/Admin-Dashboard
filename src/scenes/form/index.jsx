@@ -27,6 +27,9 @@ const Form=()=>{
             <form onSubmit={handleFormSubmit}>
                 <Box>
                 <TextField
+                sx={{
+                  pb:0
+                }}
                 fullWidth
                 variant="filled"
                 type="text"
@@ -39,6 +42,9 @@ const Form=()=>{
                 helperText={touched.firstName && errors.firstName}              
               />
                  <TextField
+                 sx={{
+                  pb:0
+                 }}
                 fullWidth
                 variant="filled"
                 type="text"
@@ -49,9 +55,12 @@ const Form=()=>{
                 name="lastName"
                 error={!!touched.lastName && !!errors.lastName}
                 helperText={touched.lastName && errors.lastName}
-                sx={{ gridColumn: "span 2" }}
+              
               />
               <TextField
+              sx={{
+                pb:0
+              }}
                 fullWidth
                 variant="filled"
                 type="text"
@@ -64,6 +73,9 @@ const Form=()=>{
                 helperText={touched.email && errors.email}                
               />
               <TextField
+              sx={{
+                pb:0
+              }}
                 fullWidth
                 variant="filled"
                 type="text"
@@ -76,6 +88,9 @@ const Form=()=>{
                 helperText={touched.contact && errors.contact}                
               />
               <TextField
+              sx={{
+                pb:0
+              }}
                 fullWidth
                 variant="filled"
                 type="text"
@@ -88,6 +103,9 @@ const Form=()=>{
                 helperText={touched.address1 && errors.address1}                
               />
               <TextField
+              sx={{
+                pb:0
+              }}
                 fullWidth
                 variant="filled"
                 type="text"
