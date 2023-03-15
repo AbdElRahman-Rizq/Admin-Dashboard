@@ -66,10 +66,13 @@ const Invoices=()=>{
           },
           "& .name-column,.cost-column":{
             color: colors.greenAccent[300]
+          },"& .MuiDataGrid-panel":{
+            width:"50% !important",
           }
        }}
        >
        <DataGrid
+      
           rows={mockDataInvoices}
           columns={columns}
           components={{ Toolbar: GridToolbar }}

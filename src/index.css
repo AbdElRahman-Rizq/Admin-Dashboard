@@ -13,6 +13,14 @@ font-family: 'Source Sans Pro',sans-serif;
 .side-Bar{
   display:none !important;
 } 
+/* filter In DataGrid */
+.css-n3z9fz-MuiPopper-root-MuiDataGrid-panel{
+  width: 33%;
+}
+.css-1h08ml-MuiFormControl-root-MuiDataGrid-filterFormValueInput,
+.css-q68e8e-MuiFormControl-root-MuiDataGrid-filterFormColumnInput{
+  width: 45% !important;
+}
 }
 ::-webkit-scrollbar{
   width: 1vw;
