@@ -8,19 +8,24 @@ font-family: 'Source Sans Pro',sans-serif;
   display: flex;
   position: relative;
 }
+/* for mobile screen */
 @media (max-width: 765px) {
 
 .side-Bar{
   display:none !important;
 } 
 /* filter In DataGrid */
-.css-n3z9fz-MuiPopper-root-MuiDataGrid-panel{
+.css-1mtsuo7{
   width: 33%;
 }
-.css-1h08ml-MuiFormControl-root-MuiDataGrid-filterFormValueInput,
-.css-q68e8e-MuiFormControl-root-MuiDataGrid-filterFormColumnInput{
+.css-1lfl7ts,
+.css-1tx315l{
   width: 45% !important;
 }
+}
+/*DataGrid Tool bar  */
+.css-phyg8y{
+color:#a1a4ab !important;
 }
 ::-webkit-scrollbar{
   width: 1vw;
