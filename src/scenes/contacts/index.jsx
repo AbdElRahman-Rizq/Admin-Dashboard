@@ -47,9 +47,9 @@ const Contacts=()=>{
     return(  
         <Box m="20px">
        <Header subtitle={"List of Contacts for Future Reference"} title={"CONTACTS"}/>
-       <Box m="30px 5px 0 0"
+       <Box m="20px"
        height="75vh"
-       b="0"
+       p="0"
        sx={{
         "& .MuiDataGrid-root": {
             border: "none",
