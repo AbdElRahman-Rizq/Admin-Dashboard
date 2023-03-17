@@ -14,6 +14,10 @@ font-family: 'Source Sans Pro',sans-serif;
 .side-Bar{
   display:none !important;
 } 
+/* DataGrid in all app */
+.css-1c4jhqm-MuiDataGrid-root,.css-1o2zwxf{
+  font-size: .95rem !important;
+}
 /* filter In DataGrid */
 .css-1mtsuo7{
   width: 33%;
@@ -24,8 +28,9 @@ font-family: 'Source Sans Pro',sans-serif;
 }
 }
 /*DataGrid Tool bar  */
-.css-phyg8y{
+.css-phyg8y,.css-1j9kmqg-MuiDataGrid-toolbarContainer{
 color:#a1a4ab !important;
+padding: 1% !important;
 }
 ::-webkit-scrollbar{
   width: 1vw;
